@@ -1,1 +1,45 @@
 a {}
+
+p {}
+
+body {
+    text-align: center;
+    margin:0px;
+}
+
+.header {
+    padding: 10px;
+}
+
+.spacer {
+    padding: 30px;
+}
+
+.main {
+    margin: 8px;
+}
+
+.left {
+    margin-left: 8%;
+    width: 40%;
+    float: left;
+}
+
+.right {
+    margin-right: 8%;
+    width: 40%;
+    float: right;
+}
+
+.footer {
+    clear: both;
+    white-space: pre-wrap;
+    font-size: 10pt;
+}
+
+.testimonial {
+    margin: auto;
+    border: 1px solid black;
+    width: 30%;
+    background-color: salmon;
+}
