@@ -16,7 +16,8 @@ body {
 }
 
 .main {
-    margin: 8px;
+    margin: 8px auto;
+    width: 85%;
 }
 
 .left {
