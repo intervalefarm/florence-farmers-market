@@ -5,6 +5,7 @@ p {}
 body {
     text-align: center;
     margin:0px;
+    background-color: #e8dfc3;
 }
 
 .header {
@@ -17,19 +18,22 @@ body {
 
 .main {
     margin: 8px auto;
-    width: 85%;
+    width: 70%;
+    min-width: 300px;
 }
 
 .left {
-    margin-left: 8%;
-    width: 40%;
-    float: left;
+    width: 30%;
+    min-width: 200px;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .right {
-    margin-right: 8%;
-    width: 40%;
-    float: right;
+    width: 60%;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px;
 }
 
 .footer {
