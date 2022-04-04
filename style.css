@@ -67,3 +67,7 @@ h2 {
     width: 30%;
     background-color: salmon;
 }
+
+.vendor-list {
+    white-space: pre-wrap;
+}
