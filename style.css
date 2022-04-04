@@ -1,11 +1,16 @@
-a {}
-
-p {}
-
 body {
     text-align: center;
     margin:0px;
-    background-color: #e8dfc3;
+    background: linear-gradient(to bottom, rgba(174,227,255,0.9) 0%, rgba(0,93,5,0.4) 100%); 
+    background-attachment: fixed;
+}
+
+h1 {
+    margin:  0px;
+}
+
+h2 {
+    margin: 0px;
 }
 
 .header {
@@ -16,24 +21,35 @@ body {
     padding: 30px;
 }
 
+.outer {
+    background-color: seashell;
+    border: 2px solid goldenrod;
+    border-radius: 20px;
+    margin: 10px auto;
+    max-width: 1000px;
+    min-width: 300px;
+    padding: 20px;
+    width: 70%;
+}
+
 .main {
     margin: 8px auto;
-    width: 70%;
     min-width: 300px;
 }
 
 .left {
-    width: 30%;
-    min-width: 200px;
     display: inline-block;
+    min-width: 200px;
     vertical-align: middle;
+    width: 30%;
 }
 
 .right {
-    width: 60%;
     display: inline-block;
-    vertical-align: middle;
     margin: 10px;
+    min-width: 300px;
+    vertical-align: middle;
+    width: 60%;
 }
 
 .footer {
