@@ -93,6 +93,32 @@ iframe {
     background-color: salmon;
 }
 
-.vendor-list {
-    white-space: pre-wrap;
+.vendor-block {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0px;
+}
+
+.vendor-name {
+    width: 25%;
+}
+.vendor-product {
+    width: 40%;
+}
+.vendor-contact {
+    width: 30%;
+}
+@media (max-width: 800px) {
+    .vendor-block {
+        flex-direction: column;
+    }
+    .vendor-name {
+        width: 100%;
+    }
+    .vendor-product {
+        width: 100%;
+    }
+    .vendor-contact {
+        width: 100%;
+    }
 }
