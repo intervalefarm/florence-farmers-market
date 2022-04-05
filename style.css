@@ -48,27 +48,24 @@ iframe {
 }
 
 .payment {
+    display: flex;
+    flex-direction: row;
 }
 
 .payment-img {
-    display: inline-block;
+    display: flex;
     vertical-align: top;
-    min-width: 160px;
     padding: 10px 0px;
 }
 
 .payment-text {
-    display: inline-block;
-    max-width: 700px;
 }
 
 .payment-img-left {
-    display: inline-block;
     padding-right: 5px;
 }
 
 .payment-img-right {
-    display: inline-block;
     padding-left: 5px;
 }
 
@@ -108,7 +105,21 @@ iframe {
 .vendor-contact {
     width: 30%;
 }
+
+@media (max-width: 1100px) {
+    .payment-img {
+        flex-direction: column;
+    }
+}
+
 @media (max-width: 800px) {
+    .payment {
+        flex-direction: column;
+    }
+    .payment-img {
+        flex-direction: row;
+        justify-content: center;
+    }
     .vendor-block {
         flex-direction: column;
     }
