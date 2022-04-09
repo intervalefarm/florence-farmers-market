@@ -45,6 +45,7 @@ iframe {
 }
 
 .main {
+    padding: 0px 30px;
 }
 
 .payment {
@@ -75,6 +76,7 @@ iframe {
     margin-top: 30px;
 }
 
+/* Videos on info page */
 .iframe-wrapper {
     position: relative;
     overflow: hidden;
@@ -83,13 +85,7 @@ iframe {
     padding-top: 45%;
 }
 
-.testimonial {
-    margin: auto;
-    border: 1px solid black;
-    width: 30%;
-    background-color: salmon;
-}
-
+/* Vendor page components */
 .vendor-block {
     display: flex;
     flex-direction: row;
@@ -132,4 +128,48 @@ iframe {
     .vendor-contact {
         width: 100%;
     }
+}
+
+/* Slideshow based on
+   https://codeshack.io/pure-css3-image-slideshow-example/
+*/
+.slideshow-wrapper-outer {
+    margin: 15px auto 15px auto;
+    max-width: 600px;
+    width: 100%;
+}
+.slideshow-wrapper-inner {
+    padding-top: 67%; /* 6:4 ratio */
+    position: relative;
+    width: 100%;
+}
+.image-slideshow {
+    font-size: 0px;
+    overflow: hidden;
+    width: 100%;
+    white-space: nowrap;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.image-slideshow > div {
+    animation: move 30s ease-in-out 0s infinite normal;
+    display:inline-block;
+    overflow: hidden;
+    width: 100%;
+}
+.image-slideshow > div img {
+    width: 100%;
+}
+@keyframes move {
+    0%, 13% { transform: translateX(0); }
+    17%, 30% { transform: translateX(-100%); }
+    33%, 47% { transform: translateX(-200%); }
+    50%, 63% { transform: translateX(-300%); }
+    67%, 80% { transform: translateX(-400%); }
+    83%, 97% { transform: translateX(-500%); }
+    100% { transform: translateX(0px); }
 }
