@@ -94,13 +94,13 @@ iframe {
 }
 
 .vendor-name {
-    width: 25%;
+    width: 30%;
 }
 .vendor-product {
-    width: 40%;
+    width: 45%;
 }
 .vendor-contact {
-    width: 30%;
+    width: 20%;
     line-height: 1.5;
 }
 
