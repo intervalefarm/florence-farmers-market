@@ -89,7 +89,8 @@ iframe {
 .vendor-block {
     display: flex;
     flex-direction: row;
-    margin: 20px 0px;
+    padding: 10px 0px 10px 0px;
+    border-bottom: 1px dotted orangered;
 }
 
 .vendor-name {
@@ -100,6 +101,7 @@ iframe {
 }
 .vendor-contact {
     width: 30%;
+    line-height: 1.5;
 }
 
 @media (max-width: 1100px) {
