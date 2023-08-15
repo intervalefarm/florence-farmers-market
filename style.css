@@ -12,7 +12,7 @@ h1 {
     margin:  0px;
 }
 
-h2 {
+h3 {
     margin: 0px;
 }
 
@@ -26,12 +26,20 @@ iframe {
     height: 100%;
 }
 
+.logo {
+    height: 150px;
+}
+
 .header {
-    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 14pt;
 }
 
 .spacer {
-    padding: 30px 10px;
+    padding: 5px 20px;
 }
 
 .outer {
@@ -54,8 +62,8 @@ iframe {
 }
 
 .payment-img {
+    align-items: center;
     display: flex;
-    vertical-align: top;
     padding: 10px 0px;
 }
 
@@ -105,12 +113,18 @@ iframe {
 }
 
 @media (max-width: 1100px) {
+    .header {
+        flex-direction: row;
+    }
     .payment-img {
         flex-direction: column;
     }
 }
 
 @media (max-width: 800px) {
+    .header {
+        flex-direction: column;
+    }
     .payment {
         flex-direction: column;
     }
@@ -129,6 +143,9 @@ iframe {
     }
     .vendor-contact {
         width: 100%;
+    }
+    h3 {
+        margin: 18px;
     }
 }
 
