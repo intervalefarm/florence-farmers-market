@@ -13,7 +13,6 @@ h1 {
 }
 
 h3 {
-    margin: 0px;
 }
 
 iframe {
@@ -56,25 +55,35 @@ iframe {
     padding: 0px 30px;
 }
 
-.payment {
-    display: flex;
-    flex-direction: row;
+.first-heading {
+    margin: 0px;
 }
 
-.payment-img {
+.two-column {
     align-items: center;
     display: flex;
-    padding: 10px 0px;
+    flex-direction: row;
+    justify-content: center;
 }
 
-.payment-text {
+.two-column-left {
+    padding-right: 10px;
 }
 
-.payment-img-left {
+.two-column-right {
+    padding-left: 10px;
+}
+
+.flex-img {
+    align-items: center;
+    display: flex;
+}
+
+.flex-img-left {
     padding-right: 5px;
 }
 
-.payment-img-right {
+.flex-img-right {
     padding-left: 5px;
 }
 
@@ -116,7 +125,7 @@ iframe {
     .header {
         flex-direction: row;
     }
-    .payment-img {
+    .flex-img {
         flex-direction: column;
     }
 }
@@ -125,10 +134,13 @@ iframe {
     .header {
         flex-direction: column;
     }
-    .payment {
+    .two-column {
         flex-direction: column;
     }
-    .payment-img {
+    .two-column-left {
+        padding-bottom: 10px;
+    }
+    .flex-img {
         flex-direction: row;
         justify-content: center;
     }
